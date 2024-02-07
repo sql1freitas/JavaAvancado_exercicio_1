@@ -1,0 +1,39 @@
+/**
+ * @author Matheus Felipe - <a href="https://github.com/sql1freitas">...</a>
+ */
+
+Complexidade de Tempo:
+
+#### Pilha:
+
+- push(): O(n), onde n é o tamanho atual da pilha. Isso ocorre porque, no pior caso, precisamos percorrer todos os elementos para encontrar o último e adicionar um novo elemento no fim.
+- pop(): O(1), pois sempre removemos o último elemento da pilha, não importando o tamanho dela.
+
+#### Fila:
+
+- enqueue(): O(1), pois adicionamos elementos no final da fila, o que pode ser feito em tempo constante.
+- **dequeue(): O(1), pois sempre removemos o primeiro elemento da fila, independentemente do tamanho da fila.
+- **rear(): O(1), pois podemos acessar o último elemento diretamente sem precisar percorrer toda a fila.
+- **front(): O(1), pois podemos acessar o primeiro elemento diretamente sem precisar percorrer toda a fila.
+
+#### Lista Encadeada:
+
+- push(): O(n), onde n é o tamanho atual da lista encadeada. Isso ocorre porque, no pior caso, precisamos percorrer toda a lista para encontrar o último elemento e adicionar um novo elemento no fim.
+- pop(): O(n), onde n é o tamanho atual da lista encadeada. Isso ocorre porque, no pior caso, precisamos percorrer toda a lista para encontrar o penúltimo elemento e remover o último.
+- insert(): O(n), onde n é o tamanho atual da lista encadeada. Isso ocorre porque, no pior caso, precisamos percorrer a lista até o índice desejado para inserir o novo elemento.
+- remove(): O(n), onde n é o tamanho atual da lista encadeada. Isso ocorre porque, no pior caso, precisamos percorrer a lista até o índice desejado para remover o elemento.
+- elementAt(): O(n), onde n é o tamanho atual da lista encadeada. Isso ocorre porque, no pior caso, precisamos percorrer a lista até o índice desejado para encontrar o elemento.
+
+Complexidade de Espaço:
+
+#### Pilha:
+
+- O(n), onde n é o número de elementos na pilha. Isso ocorre porque armazenamos os elementos em um array de tamanho fixo.
+
+#### Fila:
+
+- O(n), onde n é o número de elementos na fila. Isso ocorre porque armazenamos os elementos em uma lista encadeada.
+
+#### Lista Encadeada:
+
+- O(n), onde n é o número de elementos na lista encadeada. Isso ocorre porque precisamos de memória adicional para armazenar cada elemento e o próximo ponteiro em cada nó.
